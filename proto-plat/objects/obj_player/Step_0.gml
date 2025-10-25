@@ -50,7 +50,7 @@ image_xscale = facing;
 
 
 // ==========================================================
-// === GRAVITY & WALL SLIDE (smoothed) ===
+// === GRAVITY & WALL SLIDE ===
 // ==========================================================
 //
 // Applies variable gravity depending on vertical direction.
@@ -59,7 +59,6 @@ image_xscale = facing;
 //
 
 if (on_wall && !on_ground && vsp > 0) {
-
     // Smoothly approach target slide speed for consistency
     var target_slide = slide_speed;
     vsp = lerp(vsp, target_slide, 0.25);
@@ -96,11 +95,11 @@ if (on_ground) coyote = coyote_max;
 if (jumpbuf > 0) {
     var can_jump = false;
 
-    // 1. Normal / Coyote jump
+    // Normal / Coyote jump
     if (coyote > 0) {
         can_jump = true;
     }
-    // 2. Wall jump
+    // Wall jump
     else if (on_wall) {
         can_jump = true;
 
@@ -111,7 +110,7 @@ if (jumpbuf > 0) {
         vsp = jump_speed;
         wall_jump_timer = wall_jump_lock; // apply horizontal lock
     }
-    // 3. Double jump
+    // Double jump
     else if (extra_jumps > 0) {
         can_jump = true;
         extra_jumps--;
@@ -127,7 +126,7 @@ if (jumpbuf > 0) {
 
 
 // ==========================================================
-// === JUMP CUT (variable jump height) ===
+// === JUMP CUT ===
 // ==========================================================
 //
 // Reduces jump height when the player releases the jump key early,

@@ -45,11 +45,10 @@ jump_cut_mult = 0.6;   // Applied when jump key released early (creates short ho
 slide_speed     = 1.5; // Target fall speed when sliding on a wall
 wall_jump_hsp   = 1.8; // Horizontal push when performing a wall jump
 wall_jump_lock  = 6;   // Frames of horizontal input lock after wall jump
-wall_jump_timer = 0;   // Counts down during lock period
 
 
 // ==========================================================
-// === DOUBLE JUMP ===
+// === DOUBLE JUMP (CONFIG) ===
 // ==========================================================
 //
 // Controls the number of allowed mid-air jumps. Reset each time
@@ -57,7 +56,6 @@ wall_jump_timer = 0;   // Counts down during lock period
 //
 
 max_extra_jumps = 1;   // Allowed mid-air jumps (1 = double jump)
-extra_jumps     = max_extra_jumps;
 
 
 // ==========================================================
@@ -90,7 +88,10 @@ touching_left  = false; // True if touching wall on the left side
 touching_right = false; // True if touching wall on the right side
 on_wall = false;        // True if sliding or sticking to a wall
 
+wall_jump_timer = 0;    // Countdown for temporary horizontal input lock
+
 coyote  = 0;           // Remaining frames of coyote time
 jumpbuf = -1;          // Remaining frames of buffered jump input
+extra_jumps = max_extra_jumps; // Remaining available air jumps
 
 facing = 1;            // Facing direction (1 = right, -1 = left)
