@@ -1,3 +1,5 @@
+coll_layer = layer_tilemap_get_id(layer_get_id("l_tile_collision"));
+
 // ==========================================================
 // === PLAYER MOVEMENT CONFIGURATION ===
 // ==========================================================
@@ -48,7 +50,7 @@ wall_jump_lock  = 6;   // Frames of horizontal input lock after wall jump
 
 
 // ==========================================================
-// === DOUBLE JUMP (CONFIG) ===
+// === DOUBLE JUMP
 // ==========================================================
 //
 // Controls the number of allowed mid-air jumps. Reset each time

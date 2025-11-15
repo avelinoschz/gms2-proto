@@ -1,5 +1,7 @@
 /// scr_collision_core
 /// Core functions to check if positions or rectangles hit solid tiles.
+/// This is an unused first attempt to handle collisions and movement manually. 
+/// Left it here for educational purposes.
 
 /**
  * @function solid_at(_x, _y)

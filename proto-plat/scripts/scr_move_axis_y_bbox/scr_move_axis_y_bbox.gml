@@ -1,5 +1,6 @@
 /// scr_move_axis_y
-/// Handles vertical movement with solid collision detection.
+/// This is an unused first attempt to handle collisions and movement manually. 
+/// Left it here for educational purposes.
 
 /**
  * @function move_axis_y(_amount)

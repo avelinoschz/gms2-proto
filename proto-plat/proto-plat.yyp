@@ -2,7 +2,7 @@
   "$GMProject":"v1",
   "%Name":"proto-plat",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -32,7 +32,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.14.0.207",
   },
   "name":"proto-plat",
   "resources":[
@@ -40,7 +40,9 @@
     {"id":{"name":"obj_goal","path":"objects/obj_goal/obj_goal.yy",},},
     {"id":{"name":"obj_player_bbox","path":"objects/obj_player_bbox/obj_player_bbox.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
-    {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
+    {"id":{"name":"rm_level_0","path":"rooms/rm_level_0/rm_level_0.yy",},},
+    {"id":{"name":"rm_level_1","path":"rooms/rm_level_1/rm_level_1.yy",},},
+    {"id":{"name":"rm_level_2","path":"rooms/rm_level_2/rm_level_2.yy",},},
     {"id":{"name":"scr_collision_core_bbox","path":"scripts/scr_collision_core_bbox/scr_collision_core_bbox.yy",},},
     {"id":{"name":"scr_move_axis_x_bbox","path":"scripts/scr_move_axis_x_bbox/scr_move_axis_x_bbox.yy",},},
     {"id":{"name":"scr_move_axis_y_bbox","path":"scripts/scr_move_axis_y_bbox/scr_move_axis_y_bbox.yy",},},
@@ -57,7 +59,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
+    {"roomId":{"name":"rm_level_0","path":"rooms/rm_level_0/rm_level_0.yy",},},
+    {"roomId":{"name":"rm_level_1","path":"rooms/rm_level_1/rm_level_1.yy",},},
+    {"roomId":{"name":"rm_level_2","path":"rooms/rm_level_2/rm_level_2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

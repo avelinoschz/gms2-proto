@@ -1,4 +1,6 @@
 /// scr_move_axis_x
+/// This is an unused first attempt to handle collisions and movement manually. 
+/// Left it here for educational purposes.
 
 /**
  * @function move_axis_x(_amount)

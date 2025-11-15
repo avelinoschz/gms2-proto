@@ -19,8 +19,8 @@ var move = (right_key ? 1 : 0) - (left_key ? 1 : 0);
 // Used for wall slides and wall jumps.
 //
 
-touching_left  = place_meeting(x - 1, y, global.TILEMAP_COLLISION);
-touching_right = place_meeting(x + 1, y, global.TILEMAP_COLLISION);
+touching_left  = place_meeting(x - 1, y, coll_layer);
+touching_right = place_meeting(x + 1, y, coll_layer);
 on_wall = (touching_left && move < 0) || (touching_right && move > 0);
 
 
@@ -146,8 +146,8 @@ if (vsp < 0 && keyboard_check_released(vk_space)) {
 // against the tilemap defined in global.TILEMAP_COLLISION.
 //
 
-move_and_collide(hsp, 0, global.TILEMAP_COLLISION);
-move_and_collide(0, vsp, global.TILEMAP_COLLISION);
+move_and_collide(hsp, 0, coll_layer);
+move_and_collide(0, vsp, coll_layer);
 
 
 // ==========================================================
@@ -158,8 +158,8 @@ move_and_collide(0, vsp, global.TILEMAP_COLLISION);
 // if a ceiling collision occurs.
 //
 
-on_ground = place_meeting(x, y + 1, global.TILEMAP_COLLISION);
-hit_head  = place_meeting(x, y - 1, global.TILEMAP_COLLISION);
+on_ground = place_meeting(x, y + 1, coll_layer);
+hit_head  = place_meeting(x, y - 1, coll_layer);
 
 if (hit_head && vsp < 0) vsp = 0;
 
